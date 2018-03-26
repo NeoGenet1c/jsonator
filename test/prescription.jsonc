@@ -1,0 +1,141 @@
+{
+    "description": "Describing what is this recipe for",
+
+    "required": [
+        "clasess",
+        "timetable"
+    ],
+
+    "properties": {
+
+        "classes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "type": "class"
+            },
+            "ui": {
+                "type": "group",
+                "heading": "Offered classes",
+                "description": "Specify list of all offered classes."
+            }
+        },
+
+        "timetable": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "day": {
+                        "type": "string",
+                        "ui": {
+                            "type": "select",
+                            "options": [
+                                "Monday",
+                                "Tuesday",
+                                "Wednesday",
+                                "Thurdsday",
+                                "Friday"
+                            ],
+                            "label": "Day"
+                        }
+                    }, 
+                    "sessions": {
+                        "type": "array",
+                        "minItems": 1,
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "session"
+                        },
+                        "ui": {
+                            "type": "group",
+                            "heading": "Add session to this day"
+                        }
+                    }
+                }
+            },
+            "ui": {
+                "type": "group",
+                "heading": "Timetable",
+                "description": "Add classes to the timetable that will be offered on the website."
+            }
+        }
+    },
+
+
+    "definitions": {
+
+        "class": {
+            "properties": {
+                "id": { 
+                    "type": "id"
+                },
+                "title": { 
+                    "type": "string",
+                    "ui": {
+                        "type": "input",
+                        "placeholder": "Class name",
+                        "tooltip": "Official name of the class"
+                    }
+                },
+                "description": { 
+                    "type": "string",
+                    "ui": {
+                        "type": "textarea",
+                        "placeholder": "Class description...",
+                        "layout": "block"
+                    }
+                }
+            }
+        },
+
+        "session": {
+            "properties": {
+                "classId": {
+                    "type": "reference",
+                    "definition": "class",
+                    "idProperty": "id",
+                    "ui": {
+                        "type": "selector",
+                        "label": "Select a class",
+                        "layout": "inline"
+                    }
+                },
+                "time": {
+                    "type": "date",
+                    "format": "HH:MM",
+                    "ui": {
+                        "type": "datepicker",
+                        "label": "Starting time",
+                        "layout": "inline"
+                    }
+                },
+                "room": { 
+                    "type": "string", 
+                    "ui": {
+                        "type": "input",
+                        "label": "Room name",
+                        "layout": "inline"
+                    }
+                },
+                "instructors": {
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "type": "string",
+                        "ui": {
+                            "layout": "inline"
+                        }
+                    },
+                    "ui": {
+                        "type": "group",
+                        "heading": "Instructors"
+                    }
+                }
+            }
+        }
+    }
+}

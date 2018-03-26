@@ -1,0 +1,57 @@
+{
+    "metadata": {
+        "created": "2018-01-15 21:15",
+        "updated": "2018-01-15 21:18"
+    },
+    
+    "classes": [
+        {
+            "id": 1,
+            "title": "HITT Body Blast - Cardio",
+            "description": "Combines weights, cardio and core in a 30 minute high intensity session aimed to increase your overall fitness. This high paced, express class can be tailored to suit any individual."
+        },
+        {
+            "id": 2,
+            "title": "Pilates - Mind and Body",
+            "description": "Based on a series of exercises that build core strength, improving the way your body looks, feels and functions."
+        }
+    ],
+
+    "timetable": [
+        {
+            "day": "Monday",
+            "sessions": [
+                {
+                    "time": "07:00",
+                    "classId": 1,
+                    "room": "Dance Room",
+                    "instructors": [
+                        "Nellie",
+                        "Clar"
+                    ]
+                }
+            ]
+        },
+        {
+            "day": "Tuesday",
+            "sessions": [
+                {
+                    "time": "09:30",
+                    "classId": 2,
+                    "room": "Long Room",
+                    "instructors": [
+                        "Eni"
+                    ]
+                },
+                {
+                    "time": "09:30",
+                    "classId": 1,
+                    "room": "Dance Room",
+                    "instructors": [
+                        "Johny"
+                    ]
+                }
+            ]
+        }
+    ]
+}
