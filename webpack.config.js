@@ -11,7 +11,8 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 
 module.exports = {
-    entry: './client/app.js',
+    mode:   'development',
+    entry:  './client/app.js',
     output: {
         path:       path.resolve( 'dist' ),
         filename:   'app.js',
