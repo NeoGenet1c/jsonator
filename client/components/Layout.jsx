@@ -3,8 +3,13 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <header>
-            <h1 style={{textAlign: 'center'}}>JSONator</h1>
+        <header className="jumbotron">
+            <h1>JSONator</h1>
+            <p className="lead">
+                Create your JSONs with style. Like a total boss!
+            </p>
+            <hr className="my-4" />
+            <a className="btn btn-primary btn-lg" href="#" role="button">Start now!</a>
         </header>
     );
 };

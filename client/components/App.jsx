@@ -19,7 +19,10 @@ export default class App extends React.Component {
         return (
             <div>
                 <Layout.Header />
-
+                <main>
+                    <h1>Form manager</h1>
+                    <p>Body</p>
+                </main>
                 <Layout.Footer />
             </div>
         );
