@@ -1,0 +1,62 @@
+{
+    "description": "A mediocre recipe describing someone's bookshelf",
+
+    "required": [
+        "name",
+        "material"
+    ],
+
+    "properties": {
+
+        "name": {
+            "type": "string",
+            "ui": {
+                "type": "text",
+                "label": "Bookshelf's name"
+            }
+        },
+
+        "material": {
+            "type": "string",
+            "ui": {
+                "type": "select",
+                "options": [
+                    "Wood",
+                    "Metal",
+                    "Plastic"
+                ],
+                "label": "Choose material"
+            }
+        },
+
+        "books": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "ui": {
+                            "type": "text",
+                            "placeholder": "Book's title"
+                        }
+                    },
+                    "author": {
+                        "type": "string",
+                        "ui": {
+                            "type": "text",
+                            "placeholder": "Author of the book"
+                        }
+                    }
+                }
+            },
+            "ui": {
+                "type": "group",
+                "heading": "Book on the bookshelf",
+                "description": "Specify the books on your bookshelf"
+            }
+        }
+
+    }
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Header = () => {
     return (
         <header className="jumbotron">
@@ -10,11 +9,12 @@ const Header = () => {
                     Create your JSONs with style. Like a total boss!
                 </p>
                 <hr className="my-4" />
-                <a className="btn btn-primary btn-lg" href="#" role="button">Start now!</a>
             </div>
         </header>
     );
 };
+
+//<a className="btn btn-primary btn-lg" href="#" role="button">Start now!</a>
 
 
 const Footer = () => {

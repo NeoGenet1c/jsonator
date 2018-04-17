@@ -1,0 +1,27 @@
+{
+    "description": "Very simple recipe to build title and description.",
+
+    "required": [
+        "title"
+    ],
+
+    "properties": {
+
+        "title": {
+            "type": "string",
+            "ui": {
+                "type": "input",
+                "label": "Class title"
+            }
+        },
+
+        "description": {
+            "type": "string",
+            "ui": {
+                "type": "textarea",
+                "placeholder": "Describe the contents of the class..."
+            }
+        }
+
+    }
+}
