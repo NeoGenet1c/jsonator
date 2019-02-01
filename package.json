@@ -13,22 +13,22 @@
   "author": "Joe Lobotka (joe@codevels.com)",
   "license": "GPL-3.0",
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "lodash": "^4.17.5",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "bootstrap": "^4.2.1",
+    "lodash": "^4.17.11",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.42",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
     "path": "^0.12.7",
-    "style-loader": "^0.20.3",
-    "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14",
-    "webpack-dev-server": "^3.1.3"
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }
